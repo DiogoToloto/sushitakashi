@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/barra.css">
+    <link rel="stylesheet" href="../static/blog.css">
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'barra.html' %}
+    {% block component %}
+    <div  class="container-header pt-5 text-center">
+        <h1 id="titulo-principal" class="mt-5 pt-5 text-light">Blogue</h1>
+    </div>
+    <div id="container-links" class="container-fuid d-flex gap-1 pt-3 px-1">
+        <a href="/">
+            <p>HOME</p>
+        </a>
+        <p>/</p>
+        <p>BLOG</p>
+    </div>
+    {% endblock %}
+</body>
+</html>

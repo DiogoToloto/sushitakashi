@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Takashi</title>
+    <link rel="stylesheet" href="../static/barra.css">
+    <link rel="stylesheet" href="../static/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="shortcut icon" href="../static/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div id="container-header" class=" contaier-fluid fixed-top">
+            <nav class="navbar">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img width="100px" src="../static/logo-sushi-takashi.png" alt="">
+                  </a>
+                  <button id="btn-menu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span id="icon-menu" class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body  col-8 mx-auto text-center">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="/">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">CARDÁPIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">GALERIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog">BLOGUE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contatos">CONTATO</a>
+                        </li>
+                        <a href="reservas.html"><button class="btn btn-outline-success col-12">RESERVA</button></a>
+                      </ul>
+                    </div>
+                    <div>
+                        <h1>GALERIA</h1>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    {% block component %}
+    {% endblock %}
+    <footer>
+        <p>&copy;Copyright Diogo</p>
+    </footer>
+    <script src="../static/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

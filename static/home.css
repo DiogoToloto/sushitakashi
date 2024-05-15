@@ -1,0 +1,15 @@
+.container-header {
+    background-image: url(imagem-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+@keyframes lateral-direita {
+    0%{transform: left;}
+    100%{transform: right;}
+}
+
+#titulo-segundario {
+    animation: lateral-direita;
+}
