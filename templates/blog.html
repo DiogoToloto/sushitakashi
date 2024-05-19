@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/barra.css">
     <link rel="stylesheet" href="../static/blog.css">
-    <title>Document</title>
+    <title>Blog</title>
 </head>
 <body>
     {% extends 'barra.html' %}
     {% block component %}
-    <div  class="container-header pt-5 text-center">
-        <h1 id="titulo-principal" class="mt-5 pt-5 text-light">Blogue</h1>
+    <div  class="container-header d-flex flex-row align-items-center">
+        <h1 class="titulo-segundario text-light mx-auto animate__animated animate__backInLeft">Blogue</h1>
     </div>
     <div id="container-links" class="container-fuid d-flex gap-1 pt-3 px-1">
-        <a href="/">
+        <a  href="/">
             <p>HOME</p>
         </a>
         <p>/</p>

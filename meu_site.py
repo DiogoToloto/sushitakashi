@@ -30,6 +30,10 @@ def blogpage():
 @meu_site.route("/reservas")
 def reservationspage():
     return render_template("reservas.html")
+
+@meu_site.route("/sobre")
+def sobrepage():
+    return render_template("sobre.html")
  
 
 # colocar site no ar

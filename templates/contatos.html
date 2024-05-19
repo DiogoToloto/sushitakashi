@@ -1,5 +1,21 @@
-{% extends 'barra.html' %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/contato.css">
+</head>
+<body>
+    {% extends 'barra.html' %}
 
     {% block component %}
-    <h1>aqui vai ficar o conteudo</h1>
+    <div  class="container-header d-flex flex-row align-items-center">
+        <h1 class="titulo-segundario text-light mx-auto animate__animated animate__backInLeft">
+            Contato
+        </h1>
+    </div>
     {% endblock %}
+</body>
+</html>
+

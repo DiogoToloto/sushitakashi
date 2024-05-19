@@ -1,5 +1,7 @@
+@import url(barra.css);
+
 .container-header {
-    background-image: url(../static/chinese-restaurant.jpg);
+    background-image: url(../static/img/chinese-restaurant.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,6 +12,8 @@
     background-color: rgb(234, 234, 234);
     border-bottom: 1px solid #d1d1d1;
     align-items: center;
+    font-family: var(--titulo-terciario);
+    font-weight: 300;
 }
 
 #container-links > a {

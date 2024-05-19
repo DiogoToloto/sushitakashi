@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/reservas.css">
+</head>
+<body>
+    {% extends 'barra.html' %}
+
+{% block component %}
+
+<div class="container-header d-flex flex-row align-items-center">
+    <h1 class="titulo-segundario text-light mx-auto animate__animated animated__backInLeft">Reservas</h1>
+</div>
+<div class="d-flex flex-column align-items-center my-5">
+    <h2 class="text-danger titulo-segundario fs-3">RESERVAS</h2>
+    <h1>TABELA DE LIVROS</h1>
+    <form action="" method="post" class="col-10">
+        <div class="d-flex flex-column gap-4">
+            <div class="input-group flex-nowrap d-flex flex-row justify-content-center">
+                <label for="idate"><span class="material-symbols-outlined text-light input-group-text text-black" id="icon-email">calendar_month</span></label>
+                  <input type="date" name="date" id="idate" class="from-control col-12 " placeholder="Telefone" aria-label="Username" arial-describedby="icon-email">
+              </div>
+            <div class="input-group flex-nowrap d-flex flex-row justify-content-center">
+                <label for="itime"><span class="material-symbols-outlined text-light input-group-text text-black" id="icon-email">Schedule</span></label>
+                  <input type="time" name="time" id="itime" class="from-control col-12 " placeholder="Telefone" aria-label="Username" arial-describedby="icon-email">
+              </div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Quantidade de pessoas</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="3">4</option>
+                <option value="3">5</option>
+                <option value="3">6</option>
+                <option value="3">7</option>
+                <option value="3">8</option>
+              </select>
+            <div class="input-group flex-nowrap d-flex flex-row justify-content-center">
+                <label for="iname"><span class="material-symbols-outlined text-light input-group-text text-black" id="icon-email">signature</span></label>
+                  <input type="text" name="name" id="iname" class="from-control col-12 " placeholder="Nome" aria-label="Username" arial-describedby="icon-email">
+              </div>
+              <div class="input-group flex-nowrap d-flex flex-row justify-content-center">
+                <label for="itell"><span class="material-symbols-outlined text-light input-group-text text-black" id="icon-email">call</span></label>
+                  <input type="tel" name="tell" id="itell" class="from-control col-12 " placeholder="Telefone" aria-label="Username" arial-describedby="icon-email">
+              </div>
+              <div class="input-group flex-nowrap d-flex flex-row justify-content-center">
+                <label for="iemail"><span class="material-symbols-outlined text-light input-group-text text-black" id="icon-email">mail</span></label>
+                  <input type="email" name="email" id="iemail" class="from-control col-12 " placeholder="E-mail" aria-label="Username" arial-describedby="icon-email" >
+              </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <h1 class="fs-3">RESERVAS POR TELEFONE</h1>
+        <P>Cansado(a) de esperar em filas ou navegar por sites complicados? Ligue agora para nossa equipe experiente e faça sua reserva por telefone em apenas alguns minutos!</P>
+        <h2 class="fs-4">Numero</h2>
+        <p>(11)4002-8922</p>
+        <h2 class="fs-4">Horario</h2>
+        <p>9:30 - 20:00</p>
+    
+        <h1 class="fs-3">PARA RESERVA DE EVENTOS</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quae, laborum quod corrupti quas reiciendis velit consequuntur ullam animi ipsum, laboriosam consectetur quia officiis voluptas praesentium temporibus sequi voluptate minus?</p>
+</div>
+{% endblock %}
+  <script>
+    $('#idate').mask('00/00/0000');
+  </script>
+</body>
+</html>
+

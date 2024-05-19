@@ -8,17 +8,21 @@
     <link rel="stylesheet" href="../static/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="shortcut icon" href="../static/logo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <header>
-        <div id="container-header" class=" contaier-fluid fixed-top">
-            <nav class="navbar">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                    <img width="100px" src="../static/logo-sushi-takashi.png" alt="">
+        <div id="container-header" class="contaier-fluid fixed-top">
+            <nav  class="navbar">
+                <div  class="container-fluid">
+                  <a class="navbar-brand" href="/">
+                    <img width="100px" src="../static/img/logo-sushi-takashi.png" alt="">
                   </a>
                   <button id="btn-menu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span id="icon-menu" class="navbar-toggler-icon"></span>
+                    <span class="material-symbols-outlined text-light">
+                      menu
+                      </span>
                   </button>
                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
@@ -30,13 +34,13 @@
                           <a class="nav-link active" aria-current="page" href="/">INICIO</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">CARDÁPIO</a>
+                          <a class="nav-link" href="/menu">MENU</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="galeria.html">GALERIA</a>
+                            <a class="nav-link" href="/galeria">GALERIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobre.html">SOBRE</a>
+                            <a class="nav-link" href="/sobre">SOBRE</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/blog">BLOGUE</a>
@@ -44,7 +48,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/contatos">CONTATO</a>
                         </li>
-                        <a href="reservas.html"><button class="btn btn-outline-success col-12">RESERVA</button></a>
+                        <a href="/reservas"><button class="btn btn-outline-success col-12">RESERVA</button></a>
                       </ul>
                     </div>
                     <div>
@@ -57,8 +61,101 @@
     </header>
     {% block component %}
     {% endblock %}
+    <div id="newsletter" class="container d-flex flex-column text-center px-5 py-5 gap-3">
+      <h2>INSCREVA-SE AGORA</h2>
+      <div class="input-group flex-nowrap d-flex flex-row justify-content-center">
+        <span class="material-symbols-outlined text-light input-group-text text-black" id="icon-email">mail</span>
+          <input type="email" name="email" id="iemal" class="from-control " placeholder="E-mail" aria-label="Username" arial-describedby="icon-email">
+      </div>
+      <button id="btn-new" class="btn btn-success w-50 mx-auto">
+        ENVIAR
+      </button>
+    </div>
     <footer>
-        <p>&copy;Copyright Diogo</p>
+        <div class="d-flex flex-column bg-black text-light pt-5 pb-5 px-3 gap-5">
+          <div>
+            <h1 class="text-danger fs-3">CONTATE-NOS</h1>
+            <div class="d-flex">
+              <span class="material-symbols-outlined text-light">pin_drop</span>
+              <p class="px-2">Rua das rosas, 5477, São Paulo-SP</p>
+            </div>
+            <div class="d-flex">
+              <span class="material-symbols-outlined text-light">call</span>
+              <p class="px-2">(11)4002-8922</p>
+            </div>
+            <div class="d-flex">
+              <span class="material-symbols-outlined text-light">mail</span>
+              <p class="px-2">contato@site.com</p>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-danger fs-3">HORARIO DE FUNCIONAMENTO</h1>
+            <P>09h30 - 23h00</P>
+            <p>Diariamente</p>
+          </div>
+          <div>
+            <h1 class="text-danger fs-3">POSTAGENS MAIS RECENTES</h1>
+          </div>
+          <div class="">
+
+            <h1 class="text-danger fs-3">GALERIA</h1>
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img id="img-galeria" src="../static/img/fried-squid-3425707_640.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col">
+                  <img id="img-galeria" src="../static/img/ramen-2199962_640.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col">
+                  <img id="img-galeria" src="../static/img/soba-7490600_640.jpg" class="img-thumbnail" alt="...">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <img id="img-galeria" src="../static/img/sushi-2455981_640.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col">
+                  <img id="img-galeria" src="../static/img/takoyaki-5143845_640.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col">
+                  <img id="img-galeria" src="../static/img/sushi-2370272_640.jpg" class="img-thumbnail" alt="...">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <img id="img-galeria" src="../static/img/yakitori-3795433_640.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col">
+                  <img id="img-galeria" src="../static/img/sushi-3432023_640.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col">
+                  <img id="img-galeria" src="../static/img/salmon-250861_640.jpg" class="img-thumbnail" alt="...">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <img id="img-galeria" src="../static/img/japanese-food-222255_640.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col">
+                  <img id="img-galeria" src="../static/img/japanese-food-7187313_640.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col">
+                  <img id="img-galeria" src="../static/img/new-year-dishes-7709229_640.jpg" class="img-thumbnail" alt="...">
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div id="footer-copy" class="d-flex align-items-center justify-content-between py-2 px-2">
+        <div class="d-flex gap-3">
+          <span><a href="https://facebook.com" target="_blank"><img src="../static/img/fb_icon-icons.com_65434.png" alt=""></a></span>
+          <span><a href="https://www.instagram.com/diogo_silvss/" target="_blank"><img src="../static/img/instagram_icon-icons.com_65435.png" alt=""></a></span>
+          <span><a href="https://github.com/diogotoloto" target="_blank"><img src="../static/img/github_logo_icon_143772.png" alt=""></a></span>
+        </div>
+        <div>
+          &copy;2024 Diogo Toloto
+        </div>
     </footer>
     <script src="../static/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
