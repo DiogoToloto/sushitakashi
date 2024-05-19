@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "meu_site.py",
+            "user": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src" : "/(.*)",
+            "dest" : "meu_site.py"
+        }
+    ]
+}
