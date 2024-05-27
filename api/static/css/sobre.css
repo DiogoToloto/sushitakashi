@@ -1,0 +1,9 @@
+@import url(barra.css);
+
+.container-header-sobre {
+    background-image: url(../img/imagem-sobre-nos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}

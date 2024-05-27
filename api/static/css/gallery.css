@@ -1,0 +1,10 @@
+@import url(barra.css);
+
+
+.container-header-galeria {
+    background-image: url(../img/imagem-galeria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}

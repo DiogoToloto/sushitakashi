@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../static/reservas.css">
-</head>
-<body>
+
     {% extends 'barra.html' %}
 
 {% block component %}
 
-<div class="container-header d-flex flex-row align-items-center">
+<div class="container-header-reservas d-flex flex-row align-items-center">
     <h1 class="titulo-segundario text-light mx-auto animate__animated animated__backInLeft">Reservas</h1>
 </div>
 <div class="d-flex flex-column align-items-center my-5">
@@ -67,9 +59,3 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quae, laborum quod corrupti quas reiciendis velit consequuntur ullam animi ipsum, laboriosam consectetur quia officiis voluptas praesentium temporibus sequi voluptate minus?</p>
 </div>
 {% endblock %}
-  <script>
-    $('#idate').mask('00/00/0000');
-  </script>
-</body>
-</html>
-

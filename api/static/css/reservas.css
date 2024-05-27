@@ -1,0 +1,9 @@
+@import url(barra.css);
+
+.container-header-reservas {
+    background-image: url(../img/imagem-reservas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}

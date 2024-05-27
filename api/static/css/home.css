@@ -1,0 +1,167 @@
+@import url(barra.css);
+
+#btn-1 {
+    background-color: rgba(240, 248, 255, 0.600);
+    color: #505050;
+    transition: .3s ease-in-out
+}
+
+#btn-1:hover {
+    background-color: rgba(239, 47, 47, 0.600);
+    color: aliceblue;
+}
+
+.container-header-home {
+    background-image: url(../img/imagem-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.container-img {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.link {
+    color: #505050;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: 100;
+}
+
+.link:hover {
+    color: red;
+}
+
+.parent {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+.child {
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+
+.parent:hover .child {
+    transform: scale(1.1);
+}
+
+.bg-one {
+    background-image: url(../img/japanese-food-7187313_640.jpg);
+}
+
+#bg-parallax {
+    background-image: url(../img/imagem-restaurante-interior.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.parent-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 390px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: black;
+    margin: auto;
+}
+
+.child-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.5s;
+    background-color: #505050;
+    width: 100%;
+    height: 100%;
+}
+
+.child-2 button {
+    position: relative;
+}
+
+.parent-2:hover .child-2 {
+    transform: scale(1.1);
+}
+
+.bg-one-2 {
+    background-image: url(../img/pexels-cansin-balci-1915160-20293257.jpg);
+    background-size: cover;
+}
+
+.parent-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: black;
+    margin: auto;
+}
+
+
+
+.child-3 button {
+    position: relative;
+}
+
+.parent-3:hover .child-2 {
+    transform: scale(1.1);
+}
+
+.bg-one-3 {
+    background-image: url(../img/imagem-bebidas-cardapio.jpg);
+    background-size: cover;
+}
+
+.parent-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: black;
+    margin: auto;
+}
+
+
+.child-4 button {
+    position: relative;
+}
+
+.parent-4:hover .child-2 {
+    transform: scale(1.1);
+}
+
+.bg-one-4 {
+    background-image: url(../img/imagem-doces-cardapio.jpg);
+    background-size: cover;
+}
+
+.bg-one-5 {
+    background-image: url(../img/imagem-jantar-cardapio.jpg);
+    background-size: cover;
+}

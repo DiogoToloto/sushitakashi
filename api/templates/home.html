@@ -1,21 +1,115 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sushi Takashi</title>
-    <link rel="shortcut icon" href="../static/logo/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../static/home.css">
-</head>
-<body>
-    {% extends 'barra.html' %}
+{% extends 'barra.html' %}
     
-    {% block component %}
-    <div  class="container-header d-flex flex-column align-items-center text-center justify-content-center text-light">
+{% block component %}
+    <div  class="container-header-home d-flex flex-column align-items-center text-center justify-content-center text-light">
         <h1  class="animate__animated animate__backInLeft mt-5 titulo-segundario">Bem-Vindo ao</h1>
         <h2 class="animate__animated animate__backInRight pt-3 text-light titulo-terciario">Sushi Takashi</h2>
-        <button class="btn btn-danger mt-2">OLHAR MENU</button>
+        <button class="btn btn-danger mt-2 px-4">OLHAR MENU</button>
     </div>
-    {% endblock %}
-</body>
-</html>
+    <main>
+        <div class="d-flex flex-column gap-4 m-5">
+            <div class="text-center">
+                <h1 class="fs-2 titulo-segundario text-danger">Restaurante Chines</h1>
+                <h2 class="fs-1 fw-bold titulo-terciario">BEM-VINDO</h2>
+            </div>
+            <div class="text-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda facere ad veniam velit ut non.</p>
+                <p>
+                    <a class="link titulo-segundario fs-6 d-flex align-items-center justify-content-center" href="/sobre">Nossa historia <span class="material-symbols-outlined fs-6">
+                    arrow_forward
+                    </span></a>
+                </p>
+            </div>
+            <div class="container-img container-fluid">
+                <div class="parent">
+                    <div class="child bg-one"></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <!-- Efeito parallax -->
+            <div id="bg-parallax" class="container-fluid text-center p-5">
+                <div class="my-5">
+                    <h1 class="titulo-segundario text-danger fs-5">Discover</h1>
+                    <h2 class="text-light titulo-terciario fs-1">Sushi Takashi local</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Cards -->
+        <div>
+            <div class="card my-5 mx-2 border-0" >
+                <img src="../static/img/imagem-card-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title titulo-segundario text-danger fs-3">Restaurante Cultural</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error magnam similique consequuntur.</p>
+                  <a class="link titulo-segundario fs-6 d-flex align-items-center" href="/sobre">Veja mais <span class="material-symbols-outlined fs-6">
+                    arrow_forward
+                    </span></a>
+                </div>
+              </div>
+              <div class="card my-5 mx-2 border-0" >
+                <img src="../static/img/imagem-card-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title titulo-segundario text-danger fs-3">Comidas deliciosas</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error magnam similique consequuntur.</p>
+                  <a class="link titulo-segundario fs-6 d-flex align-items-center" href="/sobre">Veja mais <span class="material-symbols-outlined fs-6">
+                    arrow_forward
+                    </span></a>
+                </div>
+              </div>
+              <div class="card my-5 mx-2 border-0" >
+                <img src="../static/img/imagem-card-3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title titulo-segundario text-danger fs-3">Variedades de bebidas</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error magnam similique consequuntur.</p>
+                  <a class="link titulo-segundario fs-6 d-flex align-items-center" href="/sobre">Veja mais <span class="material-symbols-outlined fs-6">
+                    arrow_forward
+                    </span></a>
+                </div>
+              </div>
+        </div>
+        <!-- Cardapio -->
+        <div class="bg-body-secondary d-flex flex-column gap-3">
+            <div class="text-center p-4">
+                <h2 class="titulo-segundario fs-4 text-danger">Descobra</h2>
+                <h1 class="titulo-terciario fs-1 fw-bold">NOSSO<br>CARDAPIO</h1>
+            </div>
+            <div>
+                <div class="container-img-2 container-fluid">
+                    <div class="parent-2">
+                        <div class="child-2 bg-one-2">
+                            <button id="btn-1" class="btn">Almoço</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="container-img-3 container-fluid">
+                    <div class="parent-3">
+                        <div class="child-2 bg-one-3">
+                            <button id="btn-1" class="btn">Bebidas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="container-img-4 container-fluid">
+                    <div class="parent-4">
+                        <div class="child-2 bg-one-4">
+                            <button id="btn-1" class="btn">Sobremesas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="container-img-2 container-fluid">
+                    <div class="parent-2">
+                        <div class="child-2 bg-one-5">
+                            <button id="btn-1" class="btn">Jantar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

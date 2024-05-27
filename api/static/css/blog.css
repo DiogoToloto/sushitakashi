@@ -1,0 +1,26 @@
+@import url(barra.css);
+
+.container-header-blog {
+    background-image: url(../img/chinese-restaurant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+#container-links {
+    background-color: rgb(234, 234, 234);
+    border-bottom: 1px solid #d1d1d1;
+    align-items: center;
+    font-family: var(--titulo-terciario);
+    font-weight: 300;
+}
+
+#container-links > a {
+    text-decoration: none;
+    color: #000;
+}
+
+#container-links> a:hover {
+    color: red;
+}
